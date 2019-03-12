@@ -1,0 +1,23 @@
+{
+    "design":"implementation/basys3_routed.dcp",
+    "number_of_rams":"1",
+    "RAMS":{
+        "RAM0":{
+            "path":"{soc_template/rom0/ram0/bank0/ram0}",
+            "file":"../../simulation/uart_interrupt_bank0_ram0.txt"            
+        },
+        "RAM1":{
+            "path":"{soc_template/rom0/ram0/bank0/ram1}",
+            "file":"../../simulation/uart_interrupt_bank0_ram1.txt"            
+        },
+        "RAM2":{
+            "path":"{soc_template/rom0/ram0/bank0/ram2}",
+            "file":"../../simulation/uart_interrupt_bank0_ram2.txt"            
+        },
+        "RAM3":{
+            "path":"{soc_template/rom0/ram0/bank0/ram3}",
+            "file":"../../simulation/uart_interrupt_bank0_ram3.txt"            
+        }         
+    },
+    "remove_files" : " *.history bram*.txt ncverilog.key"
+}

@@ -1,0 +1,45 @@
+{
+    "project":"simulate_modelsim",
+ 
+    "flow_steps": {
+        "1": "compile_clean",
+        "2": "compile",
+        "3" : "memory",        
+        "4" : "clean_vlib",
+        "5": "vlib",
+        "6": "test_case",
+	    "7" : "simulation"
+    },
+    "flow" : {
+        "compile_clean" : {
+	        "executable": "make",
+	        "arguments" : " TARGET=$simulation CPU=$cpu clean"	
+	    },           
+	    "compile" : {
+	        "executable": "make",
+	        "arguments" : " TARGET=$simulation CPU=$cpu"	
+	    },
+	    "memory" : {
+	        "executable": "../tools/mem_to_bram.py",
+	        "arguments" : " --mem $simulation.vh.mem"	
+	    },           
+        "clean_vlib":{
+	        "executable": "rm -rf",
+	        "arguments" : " vlib"	            
+        },
+	    "vlib" : {
+	        "executable": "vlib",
+	        "arguments" : " work"	
+	    },        
+        
+	    "test_case" : {
+	        "executable": "vlog",
+	        "arguments" : " $simulation.v +incdir+../testbench +define+$tool"	
+	    },        
+	    "simulation" : {
+	        "executable": "vsim",
+	        "arguments" : " -c -do rtl_modelsim_$cpu.f -l $simulation.$cpu.$tool.log"	
+	    }
+    },
+    "remove_files" : "work transcript test_case.v vsim.wlf a.out *.o *.d *.elf *.lst *.mem *.srec *.vh.mem *.tmp"
+}

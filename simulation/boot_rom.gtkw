@@ -1,0 +1,111 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Feb 19 06:21:08 2019
+[*]
+[dumpfile] "/home/ptracton/ptracton/src/hardware/picorv32-soc/simulation/boot_rom.vcd"
+[dumpfile_mtime] "Tue Feb 19 06:19:51 2019"
+[dumpfile_size] 401230
+[savefile] "/home/ptracton/ptracton/src/hardware/picorv32-soc/simulation/boot_rom.gtkw"
+[timestart] 0
+[size] 1920 1023
+[pos] -1 -1
+*-20.525702 3135000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] testbench.
+[treeopen] testbench.dut.
+[treeopen] testbench.dut.cpu.
+[sst_width] 311
+[signals_width] 264
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@200
+-ROM
+@22
+testbench.dut.rom0.wb_adr_i[14:0]
+@28
+testbench.dut.rom0.wb_clk_i
+testbench.dut.rom0.wb_cyc_i
+@22
+testbench.dut.rom0.wb_dat_o[31:0]
+@28
+testbench.dut.rom0.wb_rst_i
+@22
+testbench.dut.rom0.wb_sel_i[3:0]
+@28
+testbench.dut.rom0.wb_stb_i
+@200
+-CPU
+@22
+testbench.dut.cpu.picorv32_core.dbg_reg_x0[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x1[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x2[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x3[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x4[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x5[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x6[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x7[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x8[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x9[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x10[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x11[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x12[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x13[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x14[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x15[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x16[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x17[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x18[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x19[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x20[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x21[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x22[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x23[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x24[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x25[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x26[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x27[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x28[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x29[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x30[31:0]
+testbench.dut.cpu.picorv32_core.dbg_reg_x31[31:0]
+@200
+-FW IF
+@23
+testbench.dut.fw_if.data[7:0]
+testbench.dut.fw_if.error_reg[31:0]
+testbench.dut.fw_if.expected_reg[31:0]
+testbench.dut.fw_if.index[5:0]
+testbench.dut.fw_if.interrupts[31:0]
+testbench.dut.fw_if.measured_reg[31:0]
+@29
+testbench.dut.fw_if.new_compare
+testbench.dut.fw_if.new_error
+testbench.dut.fw_if.new_report
+testbench.dut.fw_if.new_warning
+@23
+testbench.dut.fw_if.report_reg[31:0]
+testbench.dut.fw_if.trigger_reg[31:0]
+testbench.dut.fw_if.warning_reg[31:0]
+@29
+testbench.dut.fw_if.wb_ack_o
+@23
+testbench.dut.fw_if.wb_adr_i[31:0]
+@29
+testbench.dut.fw_if.wb_bte_i[1:0]
+testbench.dut.fw_if.wb_clk_i
+testbench.dut.fw_if.wb_cti_i[2:0]
+testbench.dut.fw_if.wb_cyc_i
+@23
+testbench.dut.fw_if.wb_dat_i[31:0]
+testbench.dut.fw_if.wb_dat_o[31:0]
+@29
+testbench.dut.fw_if.wb_err_o
+testbench.dut.fw_if.wb_rst_i
+testbench.dut.fw_if.wb_rty_o
+@23
+testbench.dut.fw_if.wb_sel_i[3:0]
+@29
+testbench.dut.fw_if.wb_stb_i
+testbench.dut.fw_if.wb_we_i
+testbench.dut.fw_if.write_mem
+[pattern_trace] 1
+[pattern_trace] 0
